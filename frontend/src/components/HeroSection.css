@@ -1,0 +1,147 @@
+.hero-section {
+  position: relative;
+  background: linear-gradient(135deg, #FFF8F0 0%, #FFEFE8 50%, #FED7C3 100%);
+  padding: 4.5rem 1.5rem 5rem;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #FFFFFF;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 3.25rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.hero-title-highlight {
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-search-wrapper {
+  max-width: 650px;
+  margin: 0 auto 2rem;
+}
+
+.hero-quick-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.quick-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #ffffff;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: var(--transition);
+}
+
+.quick-filter-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 107, 53, 0.15);
+}
+
+/* Floating decorative food emoji */
+.floating-emoji {
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.45;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.06));
+  animation: float 4s ease-in-out infinite;
+}
+
+.emoji-1 {
+  top: 15%;
+  left: 6%;
+  font-size: 3.5rem;
+  animation-delay: 0s;
+}
+
+.emoji-2 {
+  top: 65%;
+  left: 10%;
+  font-size: 2.8rem;
+  animation-delay: 1s;
+}
+
+.emoji-3 {
+  top: 20%;
+  right: 7%;
+  font-size: 3.8rem;
+  animation-delay: 1.5s;
+}
+
+.emoji-4 {
+  top: 70%;
+  right: 10%;
+  font-size: 3rem;
+  animation-delay: 2.5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .floating-emoji {
+    opacity: 0.25;
+    font-size: 2rem;
+  }
+}

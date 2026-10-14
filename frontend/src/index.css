@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #FF6B35;
+  --primary-hover: #E85520;
+  --primary-light: #FFEFEA;
+  --secondary-color: #004E89;
+  --secondary-hover: #003A66;
+  --secondary-light: #EBF3FA;
+  --accent-color: #F7C948;
+  --accent-hover: #E5B635;
+  --background-color: #FFF8F0;
+  --surface-color: #FFFFFF;
+  --text-color: #2D3436;
+  --text-muted: #636E72;
+  --text-light: #B2BEC3;
+  --border-color: #EADFD7;
+  --border-light: #F1ECE6;
+  --success-color: #2ECC71;
+  --success-light: #E8F8F0;
+  --danger-color: #E74C3C;
+  --danger-light: #FDECEA;
+  --warning-color: #F39C12;
+  --warning-light: #FEF6E7;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 2px 8px rgba(45, 52, 54, 0.06);
+  --shadow-md: 0 4px 16px rgba(45, 52, 54, 0.08);
+  --shadow-lg: 0 10px 30px rgba(255, 107, 53, 0.12);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: var(--transition);
+}
+
+input, select, textarea {
+  font-family: var(--font-family);
+  outline: none;
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1ece6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8c8bd;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}

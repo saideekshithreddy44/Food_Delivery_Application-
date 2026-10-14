@@ -1,0 +1,30 @@
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.star-icon {
+  font-size: 1.2rem;
+  color: #D1D5DB;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.star-icon.filled {
+  color: var(--accent-color);
+}
+
+.star-icon.interactive {
+  cursor: pointer;
+}
+
+.star-icon.interactive:hover {
+  transform: scale(1.2);
+}
+
+.rating-value {
+  margin-left: 0.35rem;
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}

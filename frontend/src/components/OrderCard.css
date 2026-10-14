@@ -1,0 +1,181 @@
+.order-card {
+  background-color: var(--surface-color);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-card);
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.order-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.order-card-header {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.order-id-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.order-number {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--secondary-color);
+}
+
+.order-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.status-pending {
+  background-color: #FEF3C7;
+  color: #B45309;
+}
+
+.status-confirmed {
+  background-color: #DBEAFE;
+  color: #1D4ED8;
+}
+
+.status-preparing {
+  background-color: #FDE68A;
+  color: #92400E;
+}
+
+.status-out_for_delivery {
+  background-color: #E0E7FF;
+  color: #4338CA;
+}
+
+.status-delivered {
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.status-cancelled {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+.order-card-body {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.order-restaurant-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.order-restaurant-icon {
+  font-size: 1.8rem;
+}
+
+.order-restaurant-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 0.2rem;
+}
+
+.order-items-summary {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.order-price-group {
+  text-align: right;
+}
+
+.order-total-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+.order-total-amount {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+.order-card-footer {
+  padding: 0.75rem 1.5rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.btn-toggle-items {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 0.88rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.btn-toggle-items:hover {
+  text-decoration: underline;
+}
+
+/* Expanded items drawer */
+.order-expanded-items {
+  padding: 1rem 1.5rem;
+  background-color: var(--background-color);
+  border-top: 1px solid var(--border-light);
+}
+
+.expanded-item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.expanded-item-name {
+  color: var(--text-color);
+}
+
+.expanded-item-qty {
+  color: var(--text-muted);
+  margin-left: 0.5rem;
+}
+
+.expanded-item-price {
+  font-weight: 600;
+}

@@ -1,0 +1,212 @@
+.restaurant-detail-page {
+  padding-bottom: 4rem;
+}
+
+/* Header Banner */
+.restaurant-detail-header {
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-light);
+  padding: 2.5rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.restaurant-header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.restaurant-header-img {
+  width: 260px;
+  height: 180px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-md);
+}
+
+.restaurant-header-placeholder {
+  width: 260px;
+  height: 180px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #FFEFEA, #FED7C3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  flex-shrink: 0;
+}
+
+.restaurant-header-info {
+  flex: 1;
+}
+
+.restaurant-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  margin-bottom: 0.35rem;
+}
+
+.restaurant-cuisine-sub {
+  font-size: 1.05rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.restaurant-meta-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.meta-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 500;
+}
+
+.restaurant-header-address {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Menu Section */
+.menu-container {
+  max-width: 1200px;
+  margin: 2.5rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.menu-category-tabs {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.menu-tab-btn {
+  background: none;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.menu-tab-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+}
+
+.menu-tab-btn.active {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.75rem;
+  margin-bottom: 4rem;
+}
+
+/* Reviews Section */
+.reviews-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  border-top: 1px solid var(--border-light);
+  padding-top: 3rem;
+}
+
+.reviews-header {
+  margin-bottom: 2rem;
+}
+
+.reviews-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.add-review-card {
+  background-color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-light);
+  height: fit-content;
+}
+
+.add-review-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.reviews-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.review-item-card {
+  background-color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.review-author-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.review-author-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.review-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.review-comment {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 850px) {
+  .restaurant-header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .restaurant-meta-pills {
+    justify-content: center;
+  }
+  .reviews-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}

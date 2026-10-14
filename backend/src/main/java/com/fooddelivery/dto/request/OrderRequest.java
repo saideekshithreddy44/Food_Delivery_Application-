@@ -1,0 +1,23 @@
+package com.fooddelivery.dto.request;
+
+import com.fooddelivery.enums.PaymentMethod;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class OrderRequest {
+
+    @NotNull(message = "Delivery address ID is required")
+    private Long addressId;
+
+    @Builder.Default
+    private PaymentMethod paymentMethod = PaymentMethod.CASH_ON_DELIVERY;
+
+    private String specialInstructions;
+}
